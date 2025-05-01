@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+  <header class="sombras p-3">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand"><i class="fa-brands fa-instagram" style="color: #000000;">   Instagram</i></a>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bars" style="color: #262626"></i>
+            </button>
+            <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">log Out</a></li>
+            </ul>
+          </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <form>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Caption:</label>
+              <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+            </div>
+           </form>
+            <button class="btn btn-light"><i class="fa-solid fa-camera" style="color: #262626"></i></button>
+            <button class="btn btn-light"><i class="fa-solid fa-location-dot" style="color: #262626"></i></button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+  </header>
+  <main>
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table" style="color: #5e5e5e;"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square" style="color: #5e5e5e;"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row" style="--bs-rows: 3; --bs-columns: 3;">
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/475470189/es/foto/hooking-multi-coloured-rubber-ducks.jpg?s=612x612&w=0&k=20&c=WUoABB1hDizyKXaxKvZ_P9kPM-v4o1HC-lQOYFqGZX8=" class="object-fit-contain w-100 h-100 py-2" alt="no ha cargado correctamente."style="overflow:hidden"></div>
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/458656625/es/foto/ir-directamente-a-la-c%C3%A1rcel-posibilidad-de-tarjeta.jpg?s=612x612&w=0&k=20&c=tPORaL7p2YNJtK-9AhpaHgsqvP9Kk0MaQ5S-jX8MUOI=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2"style="overflow:hidden" ></div>
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/673413724/es/foto/vida-de-comercial.jpg?s=612x612&w=0&k=20&c=-4Qsvnoczbh7fsa0RwObbST73ZAEpvYy90duNhyugBk=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2"style="overflow:hidden" ></div>
+        </div>
+        <div class="row" style="--bs-columns: 3;">
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/157402340/es/foto/a-la-izquierda-detr%C3%A1s.jpg?s=612x612&w=0&k=20&c=6481QTbY7_Tlthh8Uh49WMRD7RBLSy-d4bRNFRi7y7A=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2"style="overflow:hidden" ></div>
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/2063799507/es/foto/negocio-retrato-y-hombre-negro-en-la-ciudad-al-aire-libre-para-la-carrera-o-el-trabajo-del.jpg?s=612x612&w=0&k=20&c=vdlzKCXIbteiJG9wHvr9TxzHAaEbJIadzTJ7jv1DtXI=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2"style="overflow:hidden" ></div>
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/1053590828/es/foto/zambullidor-del-cielo-cae-con-aletas-y-mascarilla.jpg?s=612x612&w=0&k=20&c=PGek_fRhINLBBvQ5Q43bQZHWKd1vqgbuA7nP0jWIB6c=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2" style="overflow:hidden"></div>
+        </div>  
+        <div class="row" style="--bs-columns: 3;">  
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/543683067/es/foto/norwegian-money-and-a-digital-tablet-the-norwegian-currency-is-called-kroner.jpg?s=612x612&w=0&k=20&c=MunXuFjSIJGq8N4vfqxtbcBLRR0UPvVD8MPBRNSBT2o=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2"  style="overflow:hidden"></div>
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/2162095435/es/foto/hombre-de-negocios-traje-y-director-maduro-en-el-cargo-con-confianza-orgullo-y-metas-para-la.jpg?s=612x612&w=0&k=20&c=zvND1oU1AgsvP_RvQi1WDAFYFqS82fCXnhNhHFrbKvU=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2"  style="overflow:hidden"></div>
+          <div class="col-4 overflow-hidden"><img src="https://media.gettyimages.com/id/1220370886/es/foto/business-man-placing-wooden-block-on-a-tower-concept-risk-control-planning-and-strategy-in.jpg?s=612x612&w=0&k=20&c=GtvQs3_MgQE5UJv7h8Xw9kyL3SrOJgimM9ARGbGyn-A=" alt="no ha cargado correctamente." class="object-fit-contain w-100 h-100 py-2"  style="overflow:hidden"></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+       <section class="d-flex align-items-center flex-column">
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>Tomaaaa Patitos de gomaaa!!</h2>
+            <p>05/04</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/475470189/es/foto/hooking-multi-coloured-rubber-ducks.jpg?s=612x612&w=0&k=20&c=WUoABB1hDizyKXaxKvZ_P9kPM-v4o1HC-lQOYFqGZX8=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between pt-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>2 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>Al la carcel zoquete</h2>
+            <p>08/05</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/458656625/es/foto/ir-directamente-a-la-c%C3%A1rcel-posibilidad-de-tarjeta.jpg?s=612x612&w=0&k=20&c=tPORaL7p2YNJtK-9AhpaHgsqvP9Kk0MaQ5S-jX8MUOI=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>7.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>Pensando en nada, mirandolo todo</h2>
+            <p>16/05</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/673413724/es/foto/vida-de-comercial.jpg?s=612x612&w=0&k=20&c=-4Qsvnoczbh7fsa0RwObbST73ZAEpvYy90duNhyugBk=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>15.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>RedBull Te da AAALAAAAASSSS!</h2>
+            <p>22/05</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/157402340/es/foto/a-la-izquierda-detr%C3%A1s.jpg?s=612x612&w=0&k=20&c=6481QTbY7_Tlthh8Uh49WMRD7RBLSy-d4bRNFRi7y7A=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>1.000.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>What else?</h2>
+            <p>23/05</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/2063799507/es/foto/negocio-retrato-y-hombre-negro-en-la-ciudad-al-aire-libre-para-la-carrera-o-el-trabajo-del.jpg?s=612x612&w=0&k=20&c=vdlzKCXIbteiJG9wHvr9TxzHAaEbJIadzTJ7jv1DtXI=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>40.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>No hay huevos a tirarse.</h2>
+            <p>25/05</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/1053590828/es/foto/zambullidor-del-cielo-cae-con-aletas-y-mascarilla.jpg?s=612x612&w=0&k=20&c=PGek_fRhINLBBvQ5Q43bQZHWKd1vqgbuA7nP0jWIB6c=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>200.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>Apuesta y GAna en Bet897</h2>
+            <p>28/05</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/543683067/es/foto/norwegian-money-and-a-digital-tablet-the-norwegian-currency-is-called-kroner.jpg?s=612x612&w=0&k=20&c=MunXuFjSIJGq8N4vfqxtbcBLRR0UPvVD8MPBRNSBT2o=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>50.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>What else? Doble Leche</h2>
+            <p>01/06</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/2162095435/es/foto/hombre-de-negocios-traje-y-director-maduro-en-el-cargo-con-confianza-orgullo-y-metas-para-la.jpg?s=612x612&w=0&k=20&c=zvND1oU1AgsvP_RvQi1WDAFYFqS82fCXnhNhHFrbKvU=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>60.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+        <article class="border rounded-3 sombras mt-3 p-1">
+          <div class="d-flex justify-content-between p-1">
+            <h2>No sigas por ahi</h2>
+            <p>05/06</p>
+          </div>
+          <div class="imgage">
+            <img src="https://media.gettyimages.com/id/1220370886/es/foto/business-man-placing-wooden-block-on-a-tower-concept-risk-control-planning-and-strategy-in.jpg?s=612x612&w=0&k=20&c=GtvQs3_MgQE5UJv7h8Xw9kyL3SrOJgimM9ARGbGyn-A=" alt="NO HA CARGADO LA IMAGEN CORRECTAMENTE">
+          </div>
+          <div class="p-2">
+            <div class="d-flex justify-content-between p-1">
+              <i class="fa-solid fa-heart" style="color: #5e5e5e;"></i>
+              <strong>10.000 Likes</strong>
+            </div>
+            <p>Esto es un ejemplo de una malisima foto que podrias subir a un post de instagram</p>
+          </div>
+        </article>
+       </section> 
+      </div>
+    </div>
+  </main>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
